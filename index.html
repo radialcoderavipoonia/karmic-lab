@@ -665,11 +665,12 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-3 col-md-4 col-sm-6 col-10 hover_card card-transition overflow-hidden"
-                  data-aos="flip-left"
+                  class="col-lg-3 col-md-4 col-sm-6 col-10 overflow-hidden"data-aos="flip-left"
                   data-aos-duration="3000"
+                 
                 >
-                  <div class="pt-4 position-relative">
+                 <div class="hover_card card-transition ">
+                   <div class="pt-4 position-relative">
                     <img
                       src="./assets/images/png/project_img1.png"
                       alt="project image 1"
@@ -686,12 +687,14 @@
                     </div>
                   </div>
                 </div>
+                 </div>
                 <div
-                  class="col-lg-3 col-md-4 col-sm-6 col-10 hover_card card-transition overflow-hidden"
-                  data-aos="flip-right"
+                  class="col-lg-3 col-md-4 col-sm-6 col-10  overflow-hidden" data-aos="flip-right"
                   data-aos-duration="3000"
+                 
                 >
-                  <div class="pt-4 position-relative">
+                 <div class="hover_card card-transition">
+                   <div class="pt-4 position-relative">
                     <img
                       src="./assets/images/png/image 13.png"
                       alt="project image 5"
@@ -707,26 +710,27 @@
                       </p>
                     </div>
                   </div>
+                 </div>
                 </div>
                 <div
-                  class="col-lg-3 col-md-4 col-sm-6 col-10 hover_card card-transition overflow-hidden"
-                  data-aos="flip-left"
-                  data-aos-duration="3000"
+                  class="col-lg-3 col-md-4 col-sm-6 col-10 overflow-hidden" data-aos="flip-left" data-aos-duration="3000"
                 >
-                  <div class="pt-4 position-relative">
-                    <img
-                      src="./assets/images/png/project_img2.png "
-                      alt="project image 2"
-                      class="w-100"
-                    />
-                    <div
-                      class="position-absolute teambox bottom_0 left_0 d_none"
-                    >
-                      <p
-                        class="py-sm-2 py-1 m-0 text-center ff_sunflower fw_700 fs_sm color_white"
+                  <div class=" hover_card card-transition">
+                    <div class="pt-4 position-relative">
+                      <img
+                        src="./assets/images/png/project_img2.png "
+                        alt="project image 2"
+                        class="w-100"
+                      />
+                      <div
+                        class="position-absolute teambox bottom_0 left_0 d_none"
                       >
-                        The Tokyo Team
-                      </p>
+                        <p
+                          class="py-sm-2 py-1 m-0 text-center ff_sunflower fw_700 fs_sm color_white"
+                        >
+                          The Tokyo Team
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -926,7 +930,6 @@
         document.getElementById("navBar").classList.remove("shownav");
         document.body.classList.remove("overflow-hidden");
       }
-   
 
       const preloader = document.getElementById("preloader");
 
@@ -934,32 +937,31 @@
         preloader.classList.add("opacity-0");
         preloader.classList.add("pointer_event_none");
         document.body.classList.remove("overflow-hidden");
-      }, 2000);
+      }, 1500);
     </script>
     <!-- back to top  -->
-     <script>
+    <script>
+      const topbtn = document.getElementById("topbtn");
 
-        const topbtn = document.getElementById('topbtn');
+      window.onscroll = function () {
+        topscroll();
+      };
 
-
-        window.onscroll = function () { topscroll() };
-
-        function topscroll() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                topbtn.style.display = "block";
-            }
-            else {
-                topbtn.style.display = "none";
-            }
+      function topscroll() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topbtn.style.display = "block";
+        } else {
+          topbtn.style.display = "none";
         }
+      }
 
-
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <!-- aos js link  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
