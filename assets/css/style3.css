@@ -213,8 +213,7 @@ html {
   fill: rgb(0, 140, 255);
 }
 :hover.hover-instagram path {
-  fill: rgb(255, 0, 166);
-}
+  fill:(45deg, #f09433 ,#e6683c ,#dc2743 50%,#cc2366 ,#bc1888 ); 
 .color_black {
   color: #040404;
 }
