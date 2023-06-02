@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Sunflower:wght@300;500;700&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+}
 .ff_space {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -61,4 +72,37 @@
 }
 .fw_700 {
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 20px;
+    --fs-md: 56px;
+    --fs-lg: 40px;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 20px;
+    --fs-md: 56px;
+    --fs-lg: 50px;
+  }
+}
+@media (max-width: 768) {
+  :root {
+    --fs-xsm: 14px;
+    --fs-sm: 20px;
+    --fs-md: 56px;
+    --fs-lg: 40px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 20px;
+    --fs-md: 56px;
+    --fs-lg: 30px;
+  }
 }
