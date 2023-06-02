@@ -5,11 +5,7 @@
   list-style-type: none;
   box-sizing: border-box;
 }
-.bg_footer {
-  background-image: url(../images/png/Rectangle\ 5project-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 body {
   overflow-x: hidden;
 }
@@ -46,6 +42,20 @@ html {
   border-radius: 0px 0px 8px 8px;
   width: 100%;
 }
+.view-button {
+  border: none;
+  border: 1px solid black;
+  padding-left: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 32px;
+  border-radius: 50px;
+}
+:hover.view-button {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
 .bottom_0 {
   bottom: 0;
 }
@@ -55,11 +65,13 @@ html {
 .d_none {
   display: none;
 }
+.card-transition {
+  transition: all 300ms linear;
+}
 .hover_card:hover {
   transform: scale(1.3) translateY(-12px);
   position: relative;
   z-index: 5;
-  transition: all 0.3s linear;
 }
 .hover_card:hover .d_none {
   display: block !important;
@@ -207,9 +219,31 @@ html {
   color: #040404;
 }
 .line-2 {
-position: absolute;
-top: -10%;
-left: -60%
-;
+  position: absolute;
+  top: -10%;
+  left: -60%;
 }
-.f-circle{top: -40%;}
+.f-circle {
+  top: -40%;
+}
+
+.sec-line {
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  overflow: visible;
+}
+@media (min-width: 576px) {
+  .bg_footer {
+    background-image: url(../images/png/Rectangle\ 5project-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg_sm_white {
+    background-color: white;
+  }
+}
