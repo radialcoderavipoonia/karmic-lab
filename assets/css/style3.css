@@ -5,11 +5,7 @@
   list-style-type: none;
   box-sizing: border-box;
 }
-.bg_footer {
-  background-image: url(../images/png/Rectangle\ 5project-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 body {
   overflow-x: hidden;
 }
@@ -207,9 +203,32 @@ html {
   color: #040404;
 }
 .line-2 {
-position: absolute;
-top: -10%;
-left: -60%
-;
+  position: absolute;
+  top: -10%;
+  left: -60%;
 }
-.f-circle{top: -40%;}
+.f-circle {
+  top: -40%;
+}
+
+.sec-line {
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  overflow: visible;
+  
+}
+@media (min-width: 576px) {
+  .bg_footer {
+    background-image: url(../images/png/Rectangle\ 5project-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg_sm_white {
+    background-color: white;
+  }
+}
