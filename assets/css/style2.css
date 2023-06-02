@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+.card_box {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px -1px 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  transition: all 300ms linear;
+}
+.card_box:hover {
+  transform: scale(1.1);
+}
+.card_btn {
+  padding: 12px 32px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: "Sunflower";
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+.card_btn:hover {
+  background-color: white;
+  color: black;
+  font-family: "Sunflower";
+  font-weight: 500;
+  box-shadow: 0px 0px 10px 10px rgba(235, 237, 236, 0.2);
+}
+.heading_line {
+  background-image: url(../images/png/heading_line.png);
+  background-repeat: no-repeat;
+  background-position-x: 54%;
+  background-position-y: 50%;
+}
+.page_bg {
+  background-image: url(../images/png/page_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("../images/png/page_bg.png"), #040404;
+}
+
+/* section moons  */
+.white_circle {
+  position: absolute;
+  top: -14%;
+  right: -12%;
+  transition: all 300ms linear;
+}
+
+.d_n {
+  display: none;
+}
+
+.box:hover ~ .d_n {
+  display: block !important;
+  transform: scale(1.05);
+}
+
+.box {
+  padding: 18px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  height: 100% !important;
+  z-index: 1 !important;
+  transition: all 300ms linear;
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+
+.d_n {
+  display: none;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box h4 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.box p {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 6px;
+  margin-bottom: 0;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.services_line {
+  background-image: url(../images/png/services_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Sunflower";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.blur_circle{bottom: -50%;
+left: -30%; }
