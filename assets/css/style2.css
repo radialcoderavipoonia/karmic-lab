@@ -109,12 +109,12 @@
   color: #ffffff;
 }
 .blur_circle {
-  bottom: -50%;
-  left: -30%;
+  bottom: -48%;
+  left: -20%;
 }
 .blur_circle2 {
   top: -30%;
-  right: -30%;
+  right: -19%;
 }
 @media (min-width: 576px) {
   .services_line {

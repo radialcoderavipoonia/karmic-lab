@@ -6,14 +6,31 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+.z_11 {
+  z-index: 11;
 }
-html {
-  overflow-x: hidden;
+/* perloader  */
+.pointer_event_none {
+  pointer-events: none !important;
 }
-/* width  */
+.preloader_animation{
+animation: preloader 2s linear alternate infinite ;
+}
+@keyframes preloader {
+  50%{
+    transform: scale(2);
+  }
+}
+/* back to top  */
+.backToTop {
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
 
+.backToTop:hover path {
+    stroke: var(--clr-orange);
+}
 .mw_532 {
   max-width: 532px;
 }
@@ -78,6 +95,11 @@ html {
 }
 .br_25 {
   border-radius: 25px;
+}
+
+/* insta gradient  */
+.grad:hover path {
+  fill: url("#my-cool-gradient") !important;
 }
 
 @media (max-width: 1400px) {
@@ -177,10 +199,13 @@ html {
     width: 50%;
   }
 }
-:hover.shadow {
+.shadow:hover {
   box-shadow: 0px 4px 15px 0px #ffffff1a !important;
   scale: 1.2;
-  transition: 300ms linear;
+  position: relative;
+  z-index: 55;
+
+
 }
 .border-style {
   border: 1px solid #ffffff33;
@@ -212,9 +237,6 @@ html {
 :hover.hover-twitter path {
   fill: rgb(0, 140, 255);
 }
-:hover.hover-instagram path {
-  fill: rgb(255, 0, 166);
-}
 .color_black {
   color: #040404;
 }
@@ -233,6 +255,20 @@ html {
   left: -7%;
   overflow: visible;
 }
+@media (max-width: 1200px) {
+  .line-2 {
+    position: absolute;
+    top: -53%;
+    left: -60%;
+  }
+  @media (max-width: 992px) {
+    .line-2 {
+      position: absolute;
+      top: -34%;
+      left: -60%;
+    }
+  }
+}
 @media (min-width: 576px) {
   .bg_footer {
     background-image: url(../images/png/Rectangle\ 5project-bg.png);
@@ -246,4 +282,8 @@ html {
   .bg_sm_white {
     background-color: white;
   }
+}
+
+#preloader {
+  transition: all 300ms linear;
 }
